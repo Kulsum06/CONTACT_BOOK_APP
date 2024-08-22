@@ -5,14 +5,14 @@ This code creates MySQL Database "contact".
 import mysql.connector
 
 # Establish a connection to MySQL
-myDB = mysql.connector.connect(
+db = mysql.connector.connect(
     host="localhost",  # Host name
     user="root",  # User name
     password=""  # Password
 )
 
 # Create a cursor object to interact with the database
-myCursor = myDB.cursor()
+myCursor = db.cursor()
 
 # Create the database
 myCursor.execute("CREATE DATABASE contact")
